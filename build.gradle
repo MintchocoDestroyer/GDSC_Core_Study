@@ -1,0 +1,64 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.6.7'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id 'eclipse'
+    id 'war'
+    id "io.freefair.lombok" version "6.4.3"
+}
+
+group 'com.jojoldu.book'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+sourceCompatibility = 17
+
+dependencies {
+    // Spring MVC
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // Spring JDBC
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    implementation 'junit:junit:4.13.1'
+    // Live reload
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    // JUnit
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // For stand-alone Tomcat
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    // JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //lombok
+    implementation 'org.projectlombok:lombok'
+    //DB
+    implementation 'com.h2database:h2'
+
+    // JSP (JSTL, EL)
+    runtimeOnly 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'javax.servlet:jstl:1.2'
+
+    // MariaDB JDBC Driver
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.+'
+
+    // OWASP encoder
+    implementation 'org.owasp.encoder:encoder:1.2.+'
+    implementation 'org.owasp.encoder:encoder-jsp:1.2.+'
+
+    // apache commons
+    implementation 'org.apache.commons:commons-lang3:3.+'
+    implementation 'commons-validator:commons-validator:1.+'
+
+}
+
+test {
+    useJUnitPlatform()
+}
