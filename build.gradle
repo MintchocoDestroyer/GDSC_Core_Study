@@ -43,6 +43,8 @@ dependencies {
     implementation 'com.h2database:h2'
     //Mustache
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
+    //Oauth2 Client
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
     // JSP (JSTL, EL)
     runtimeOnly 'org.apache.tomcat.embed:tomcat-embed-jasper'
