@@ -41,6 +41,8 @@ dependencies {
     implementation 'org.projectlombok:lombok'
     //DB
     implementation 'com.h2database:h2'
+    //Mustache
+    implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
     // JSP (JSTL, EL)
     runtimeOnly 'org.apache.tomcat.embed:tomcat-embed-jasper'
