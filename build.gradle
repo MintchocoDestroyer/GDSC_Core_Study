@@ -45,6 +45,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
     //Oauth2 Client
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    //Session-DB
+    implementation 'org.springframework.session:spring-session-jdbc'
+    //Spring-security-test
+    testImplementation 'org.springframework.security:spring-security-test'
 
     // JSP (JSTL, EL)
     runtimeOnly 'org.apache.tomcat.embed:tomcat-embed-jasper'
