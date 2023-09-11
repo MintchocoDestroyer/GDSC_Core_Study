@@ -9,7 +9,6 @@ import com.jojoldu.admin.springboot.domain.user.Role;
 @RequiredArgsConstructor
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
     private final CustomOAuth2UserService customOAth2UserService;
 
     @Override

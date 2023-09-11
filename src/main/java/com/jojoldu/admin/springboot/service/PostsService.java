@@ -11,9 +11,11 @@ import com.jojoldu.admin.springboot.web.dto.PostsListResponseDto;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//게시판의 거시적 기능 구현
 @RequiredArgsConstructor
 @Service
 public class PostsService {
+    //@Transactional 어노테이션이 붙은 함수들의 리턴된 정보를 한 곳에 모아둠
     private final PostsRepository postsRepository;
 
     @Transactional

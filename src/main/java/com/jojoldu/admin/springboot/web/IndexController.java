@@ -16,7 +16,7 @@ public class IndexController {
 
     private final PostsService postsService;
 
-    @GetMapping("/")
+    @GetMapping("/")    //맨 처음 보는 페이지인 index.js를 절대경로 /로 설정한다
     public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts", postsService.findAllDesc());
         if (user != null){

@@ -43,7 +43,7 @@ public class OAuthAttributes {
                 .build();
     }
 
-    public User toEntity(){
+    public User toEntity(){ //User클래스가 처리할 수 있도록 Entity를 구성하는 부분
         return User.builder()
                 .name(name)
                 .email(email)

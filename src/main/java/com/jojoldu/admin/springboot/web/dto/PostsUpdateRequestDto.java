@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+//수정기능의 실질적 구현부
 @Getter
 @NoArgsConstructor
 public class PostsUpdateRequestDto {

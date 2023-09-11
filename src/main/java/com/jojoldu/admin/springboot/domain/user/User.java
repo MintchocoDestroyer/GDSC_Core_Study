@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+//해당 코드에서는 Autowire 어노테이션을 사용하지 않았기 때문에, 사용자 정보를 직렬화 하기 위하여 dto와 분리함
+
 @Getter
 @NoArgsConstructor
 @Entity

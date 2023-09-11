@@ -1,10 +1,17 @@
+/*Gradle에서 사용할 외부 라이브러리 및 전반적인 코드 스타일을 설정하는 부분이다
+실전적 코딩을 지향하는 만큼 현실과 맞지 않는 부분은 제외하였으며, 현재는 지원하지 않거나 버전과 호환이 되지않는 부분은
+임의의 코드로 대체하여 진행하였다.
+특히 버전 선택에 관해서 어려움을 겪는 사람이 많을 것으로 예상이 되므로,
+버전선 택은 꼭 필요하지 않다면 지정하지 않는 방향으로 설정하였다.
+*/
+
 buildscript {
     repositories {
         mavenCentral()
         jcenter()
     }
 }
-
+//플러그인을 하나하나 apply하면 오류가 나기 쉽기에, 하나의 객체로 구현하고, 그 id만을 넣는다
 plugins {
     id 'org.springframework.boot' version '2.6.7'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
@@ -22,7 +29,7 @@ repositories {
 }
 sourceCompatibility = 17
 
-dependencies {
+dependencies {  //의존성 주입 부분
     // Spring MVC
     implementation 'org.springframework.boot:spring-boot-starter-web'
     // Spring JDBC
@@ -67,6 +74,6 @@ dependencies {
 
 }
 
-test {
+test {  //Junit을 사용하여 테스트를 진행한다.
     useJUnitPlatform()
 }

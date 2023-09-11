@@ -53,7 +53,7 @@ var main = {
         });
     },
 
-    delete : function (){
+    delete : function (){   //삭제 기능의 구현부
         var id = $('#id').val();
 
         $.ajax({
@@ -70,4 +70,4 @@ var main = {
     }
 };
 
-main.init();
+main.init();    //어플리케이션이 작동되는 동안 main이 계속 작동되게한다.

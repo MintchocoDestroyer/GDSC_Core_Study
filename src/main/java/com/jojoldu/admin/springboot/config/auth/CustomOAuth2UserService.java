@@ -17,6 +17,10 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpSession;
 import java.util.Collections;
 
+/*OAuth2에서 제공되는 기능을 본 프로젝트에서 사용하기 위해 다소 변경을 시켜야할 필요성이있다.
+따라서 모든 정보와 세션에 대해 우리가 필요한 부분만을 사용하기 위한 커스텀이 이 페이지에 구현되어 있으며,
+일종의 출입국심사 조건이라고 생각하면 이해가 쉬운 부분이다.
+* */
 @RequiredArgsConstructor
 @Service
 

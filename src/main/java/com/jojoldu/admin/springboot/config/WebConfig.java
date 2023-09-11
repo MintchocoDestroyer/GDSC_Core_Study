@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-
+//ArgumentResolver는 제어역전의 일환으로 로그인 정보를 스프링 내부에서 알아서 처리하게끔 하는 코드
     private final LoginUserArgumentResolver loginUserArgumentResolver;
 
     @Override

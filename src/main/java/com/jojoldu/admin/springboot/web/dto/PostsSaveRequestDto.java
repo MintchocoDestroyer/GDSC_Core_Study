@@ -4,7 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-
+//실직적 저장기능 구현부
 @Getter
 @NoArgsConstructor
 public class PostsSaveRequestDto {
